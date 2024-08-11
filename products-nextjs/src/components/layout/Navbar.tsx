@@ -1,5 +1,5 @@
 import React from "react";
-function Navbar() {
+const Navbar: React.FC = () => {
   return (
     <nav className=" w-full  pt-4  text-center text-2xl justify-evenly  border-solid border-3">
       <div id="nav-upper" className=" w-full flex justify-between px-2 sm:px-2 lg:px-4 xl:px-6 2xl:px-8  items-center">
