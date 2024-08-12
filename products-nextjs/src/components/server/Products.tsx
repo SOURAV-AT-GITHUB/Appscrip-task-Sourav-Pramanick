@@ -58,7 +58,7 @@ const Products: React.FC<ProductsProps> = ({ isVisible, updateCount }) => {
         {products.map((e, index) => (
           <div key={index} className=" p-1">
             <img
-              className="h-52 sm:h-56 lg:h-72  w-full   md:w-5/6 lg:w-full min-[450px]:w-4/5  m-auto "
+              className="h-48 sm:h-56 lg:h-72  w-full min-[450px]:w-4/5  md:w-5/6   m-auto "
               src={e.image}
               alt={e.title}
             />
