@@ -51,14 +51,14 @@ const Products: React.FC<ProductsProps> = ({ isVisible, updateCount }) => {
       <div
         className={`${
           isVisible
-            ? "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-1 sm:gap-1 lg:gap-2 xl:gap-3 2xl:gap-5"
-            : "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-1 xl:gap-8"
+            ? "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-1 lg:gap-2 xl:gap-3 2xl:gap-5"
+            : "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  gap-2 xl:gap-8"
         }`}
       >
         {products.map((e, index) => (
-          <div key={index} className=" p-1">
+          <div key={index} className=" p-2">
             <img
-              className="h-48 sm:h-56 lg:h-72  w-full min-[450px]:w-4/5  md:w-5/6   m-auto "
+              className="h-44 sm:h-56 lg:h-72  w-full min-[450px]:w-4/5  md:w-4/5   m-auto "
               src={e.image}
               alt={e.title}
             />
