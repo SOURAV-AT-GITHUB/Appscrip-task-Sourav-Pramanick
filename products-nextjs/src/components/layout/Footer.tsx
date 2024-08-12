@@ -12,10 +12,13 @@ function Footer() {
           <br />
           <p>Sign up for updates from metta muse.</p>
           <br />
-          <input type="text" placeholder="Enter your e-mail..." />
-          <button className="ml-4 border-2 px-3 py-1 text-gray-400 border-gray-400">
+          <div className="flex gap-3 p-2">
+          <input type="text" placeholder="Enter your e-mail..." className="py-1  text-center w-52"/>
+          <button className=" border-2 px-2 py-2 text-gray-400 border-gray-400">
             SUBSCRIBE
           </button>
+
+          </div>
         </div>
         <br />
         <div className="w-full sm:w-2/5 lg:w-2/5 xl:w-2/5 2xl:w-2/5 ">
@@ -62,8 +65,8 @@ function Footer() {
           <li>Privacy Policy</li>
           <li>Terms & Conditions</li>
         </ul>
-        <div className="block text-black  sm:block md:hidden  lg:hidden xl:hidden 2xl:hidden text-center ">
-        <select name="metta-select" id="metta-select" className="w-full text-center p-1" >
+        <div className="block text-black  sm:block md:hidden  lg:hidden xl:hidden 2xl:hidden text-center font-extrabold text-lg">
+        <select name="metta-select" id="metta-select" className="w-full text-center p-1 bg-black text-white " >
         <option value="metta muse">metta muse</option>
           <option value='About Us'>About Us</option>
           <option value='Stories'>Stories</option>
@@ -73,7 +76,10 @@ function Footer() {
           <option value='EU Compliances Docs'>EU Compliances Docs</option> 
         </select>
         <br />
-        <select name="" id="" className="w-full text-center p-1">
+        <br />
+        <hr />
+        <br />
+        <select name="" id="" className="w-full text-center p-1 bg-black text-white">
             <option value="Join/Login as a Seller">Join/Login as a Seller</option>
             <option value="Payment & Pricing">Payment & Pricing</option>
             <option value="Return & Refunds">Return & Refunds</option>
@@ -81,6 +87,10 @@ function Footer() {
             <option value="Privacy Policy">Privacy Policy</option>
             <option value="Terms & Conditions">Terms & Conditions</option>
         </select>
+        <br />
+        <br />
+        <hr />
+        <br />
         </div>
         <div className="text-center">
           <p>FOLLOW US</p>
@@ -150,6 +160,7 @@ function Footer() {
           <br />
           <p >metta musse ACCEPTS</p>
           <svg
+          className="m-auto"
             width="300"
             height="35"
             viewBox="0 0 376 35"
@@ -285,6 +296,8 @@ function Footer() {
           </svg>
         </div>
       </div>
+      <br />
+        <p className="text-white text-sm text-center sm:text-base md:text-lg">Copyright © 2023 mettamuse. All rights reserved.</p>
     </footer>
   );
 }

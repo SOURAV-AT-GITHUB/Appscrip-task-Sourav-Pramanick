@@ -5,7 +5,7 @@ interface FiltersProps {
 }
 const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
   return (
-    <div className="w-full sm:w-full lg:w-1/6 xl:w-1/6 2xl:w-1/6">
+    <div className="p-1 w-full sm:w-full lg:w-1/6 xl:w-1/6 2xl:w-1/6">
       <br />
       <input type="checkbox" /> &nbsp;
       <label className="font-bold">CUSTOMIZBLE</label>

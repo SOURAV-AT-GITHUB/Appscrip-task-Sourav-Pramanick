@@ -6,7 +6,7 @@ import React from "react";
 export default  function Home() {
   
   return (
-    <main className=" w-full mt-8 ">
+    <main className=" mt-20 sm:mt-40 lg:mt-40 xl:mt-40 w-full">
       <section className=" text-center">
         <h3 className=" text-4xl">DISCOVER OUR PRODUCTS</h3>
         <br />

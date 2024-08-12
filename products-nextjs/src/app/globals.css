@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.empty-heart{
+    height: 30px;
+    width: 30px;
+
+}
+.filled-heart{
+    height: 20px;
+    width: 22px;
+    margin-left: 4.5px;
+
+}

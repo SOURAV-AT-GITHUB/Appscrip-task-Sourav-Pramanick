@@ -1,12 +1,25 @@
 import React from "react";
 const Navbar: React.FC = () => {
   return (
-    <nav className=" w-full  pt-4  text-center text-2xl justify-evenly  border-solid border-3">
-      <div id="nav-upper" className=" w-full flex justify-between px-2 sm:px-2 lg:px-4 xl:px-6 2xl:px-8  items-center">
+    <nav className=" bg-white fixed  w-full  pt-2  text-center text-2xl justify-evenly  border-solid border-3">
+      <div
+        id="nav-upper"
+        className=" w-full flex justify-between px-2 sm:px-2 lg:px-4 xl:px-6 2xl:px-8  items-center"
+      >
+        <div className="flex gap-2">
+        <svg className=" h-6 w-6 block sm:hidden md:hidden lg:hidden"  xmlns="http://www.w3.org/200/svg" fill="none" viewBox="20px 20px 20px 20px">
+          <path
+            fill="#14171A"
+            fill-rule="evenodd"
+            d="M4 6.75h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5zm0 6h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5zm0 6h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
         <svg
-          width="32"
-          height="32"
-          viewBox="0 0 36 36"
+          width="30"
+          height="30"
+          viewBox="0 0 40 45"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -16,96 +29,98 @@ const Navbar: React.FC = () => {
           />
         </svg>
 
-        <h2 className="font-extrabold text-3xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">LOGO</h2>
-    <div className="flex w-fit items-center ">
-        <svg
-          width="180"
-          height="30"
-          viewBox="0 0 170 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M11.5 20.9998C16.7467 20.9998 21 16.7465 21 11.4998C21 6.25311 16.7467 1.99982 11.5 1.99982C6.25327 1.99982 1.99998 6.25311 1.99998 11.4998C1.99998 16.7465 6.25327 20.9998 11.5 20.9998Z"
-            stroke="#292D32"
-            strokeWidth="1.40625"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M22 21.9998L20 19.9998"
-            stroke="#292D32"
-            strokeWidth="1.40625"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M60.62 20.8116C60.28 20.9316 59.72 20.9316 59.38 20.8116C56.48 19.8216 50 15.6916 50 8.69156C50 5.60156 52.49 3.10156 55.56 3.10156C57.38 3.10156 58.99 3.98156 60 5.34156C61.01 3.98156 62.63 3.10156 64.44 3.10156C67.51 3.10156 70 5.60156 70 8.69156C70 15.6916 63.52 19.8216 60.62 20.8116Z"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M104.396 6.5H111.596C114.996 6.5 115.336 8.09 115.566 10.03L116.466 17.53C116.756 19.99 115.996 22 112.496 22H103.506C99.9961 22 99.2361 19.99 99.5361 17.53L100.436 10.03C100.656 8.09 100.996 6.5 104.396 6.5Z"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M104 8V4.5C104 3 105 2 106.5 2H109.5C111 2 112 3 112 4.5V8"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M116.41 17.0312H104"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-          className="hidden sm:block lg:block xl:block 2xl:block"
-            d="M156.162 10.87C156.062 10.86 155.942 10.86 155.832 10.87C153.452 10.79 151.562 8.84 151.562 6.44C151.562 3.99 153.543 2 156.003 2C158.453 2 160.443 3.99 160.443 6.44C160.433 8.84 158.543 10.79 156.162 10.87Z"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-           className="hidden sm:block lg:block xl:block 2xl:block"
-            d="M151.159 14.56C148.739 16.18 148.739 18.82 151.159 20.43C153.909 22.27 158.419 22.27 161.169 20.43C163.589 18.81 163.589 16.17 161.169 14.56C158.429 12.73 153.919 12.73 151.159 14.56Z"
-            stroke="#292D32"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        <select className=" w-fit text-sm font-bold hidden sm:block lg:block xl:block 2xl:block">
-          <option value="ENG">ENG</option>
-          <option value="HND">HND</option>
-          <option value="BNG">BNG</option>
-        </select>
+        </div>
+
+        <h2 className=" ml-10 hover:cursor-pointer font-extrabold text-3xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+          LOGO
+        </h2>
+        <div className="flex w-fit items-center -mr-12 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0">
+          <svg
+            width="160"
+            height="30"
+            viewBox="0 0 170 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.5 20.9998C16.7467 20.9998 21 16.7465 21 11.4998C21 6.25311 16.7467 1.99982 11.5 1.99982C6.25327 1.99982 1.99998 6.25311 1.99998 11.4998C1.99998 16.7465 6.25327 20.9998 11.5 20.9998Z"
+              stroke="#292D32"
+              strokeWidth="1.40625"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M22 21.9998L20 19.9998"
+              stroke="#292D32"
+              strokeWidth="1.40625"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M60.62 20.8116C60.28 20.9316 59.72 20.9316 59.38 20.8116C56.48 19.8216 50 15.6916 50 8.69156C50 5.60156 52.49 3.10156 55.56 3.10156C57.38 3.10156 58.99 3.98156 60 5.34156C61.01 3.98156 62.63 3.10156 64.44 3.10156C67.51 3.10156 70 5.60156 70 8.69156C70 15.6916 63.52 19.8216 60.62 20.8116Z"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M104.396 6.5H111.596C114.996 6.5 115.336 8.09 115.566 10.03L116.466 17.53C116.756 19.99 115.996 22 112.496 22H103.506C99.9961 22 99.2361 19.99 99.5361 17.53L100.436 10.03C100.656 8.09 100.996 6.5 104.396 6.5Z"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M104 8V4.5C104 3 105 2 106.5 2H109.5C111 2 112 3 112 4.5V8"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M116.41 17.0312H104"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              className="hidden sm:block lg:block xl:block 2xl:block"
+              d="M156.162 10.87C156.062 10.86 155.942 10.86 155.832 10.87C153.452 10.79 151.562 8.84 151.562 6.44C151.562 3.99 153.543 2 156.003 2C158.453 2 160.443 3.99 160.443 6.44C160.433 8.84 158.543 10.79 156.162 10.87Z"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              className="hidden sm:block lg:block xl:block 2xl:block"
+              d="M151.159 14.56C148.739 16.18 148.739 18.82 151.159 20.43C153.909 22.27 158.419 22.27 161.169 20.43C163.589 18.81 163.589 16.17 161.169 14.56C158.429 12.73 153.919 12.73 151.159 14.56Z"
+              stroke="#292D32"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+          <select className=" w-fit text-sm font-extrabold hidden sm:block lg:block xl:block 2xl:block">
+            <option value="ENG">ENG</option>
+            <option value="HND">HND</option>
+            <option value="BNG">BNG</option>
+          </select>
         </div>
       </div>
 
-
-
-
-
-
-      <div id="nav-bottom" className="hidden sm:flex lg:flex xl:flex  2xl:flex w-full text-sm font-bold  text-center justify-evenly  mt-8 pb-4">
-        <p>SHOP</p>
-        <p>SKILLS</p>
-        <p>STORIES</p>
-        <p>ABOUT</p>
-        <p>CONTACT US</p>
+      <div
+        id="nav-bottom"
+        className="w-3/4 m-auto  hidden sm:flex lg:flex xl:flex  2xl:flex text-base font-extrabold  text-center justify-evenly  mt-8 pb-4"
+      >
+        <p className="hover:underline hover:cursor-pointer">SHOP</p>
+        <p className="hover:underline hover:cursor-pointer">SKILLS</p>
+        <p className="hover:underline hover:cursor-pointer">STORIES</p>
+        <p className="hover:underline hover:cursor-pointer">ABOUT</p>
+        <p className="hover:underline hover:cursor-pointer">CONTACT US</p>
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
