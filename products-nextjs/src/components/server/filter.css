@@ -1,0 +1,16 @@
+#filters-section{
+    padding: 0.25rem;
+    width: 100%;
+}
+#filters-section label{
+  font-weight: bold;
+}
+#filters-section select{
+width: 100%;
+}
+  @media screen and (min-width: 1024px) {
+    /*lg*/
+    #filters-section{
+      width: 16.666667%;
+    }
+  }

@@ -1,13 +1,13 @@
 import React from "react";
+import './navbar.css'
 const Navbar: React.FC = () => {
   return (
-    <nav className=" bg-white fixed  w-full  pt-2  text-center text-2xl justify-evenly  border-solid border-3">
+    <nav id="navbar" >
       <div
         id="nav-upper"
-        className=" w-full flex justify-between px-2 sm:px-2 lg:px-4 xl:px-6 2xl:px-8  items-center"
       >
-        <div className="flex gap-2">
-        <svg className=" h-6 w-6 block sm:hidden md:hidden lg:hidden"  xmlns="http://www.w3.org/200/svg" fill="none" viewBox="20px 20px 20px 20px">
+        <div id="nav-upper-left" >
+        <svg  xmlns="http://www.w3.org/200/svg" fill="none" viewBox="20px 20px 20px 20px">
           <path
             fill="#14171A"
             fill-rule="evenodd"
@@ -31,10 +31,10 @@ const Navbar: React.FC = () => {
 
         </div>
 
-        <h2 className=" ml-10 hover:cursor-pointer font-extrabold text-3xl sm:text-3xl lg:text-4xl xl:text-4xl 2xl:text-4xl">
+        <h2 id="nav-upper-middle" >
           LOGO
         </h2>
-        <div className="flex w-fit items-center -mr-12 sm:mr-0 md:mr-0 lg:mr-0 xl:mr-0">
+        <div id="nav-upper-right">
           <svg
             width="160"
             height="30"
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
               strokeLinejoin="round"
             />
             <path
-              className="hidden sm:block lg:block xl:block 2xl:block"
+              className="human-icon"
               d="M156.162 10.87C156.062 10.86 155.942 10.86 155.832 10.87C153.452 10.79 151.562 8.84 151.562 6.44C151.562 3.99 153.543 2 156.003 2C158.453 2 160.443 3.99 160.443 6.44C160.433 8.84 158.543 10.79 156.162 10.87Z"
               stroke="#292D32"
               strokeWidth="1.5"
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
               strokeLinejoin="round"
             />
             <path
-              className="hidden sm:block lg:block xl:block 2xl:block"
+              className="human-icon"
               d="M151.159 14.56C148.739 16.18 148.739 18.82 151.159 20.43C153.909 22.27 158.419 22.27 161.169 20.43C163.589 18.81 163.589 16.17 161.169 14.56C158.429 12.73 153.919 12.73 151.159 14.56Z"
               stroke="#292D32"
               strokeWidth="1.5"
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <select className=" w-fit text-sm font-extrabold hidden sm:block lg:block xl:block 2xl:block">
+          <select >
             <option value="ENG">ENG</option>
             <option value="HND">HND</option>
             <option value="BNG">BNG</option>
@@ -111,13 +111,12 @@ const Navbar: React.FC = () => {
 
       <div
         id="nav-bottom"
-        className="w-3/4 m-auto  hidden sm:flex lg:flex xl:flex  2xl:flex text-base font-extrabold  text-center justify-evenly  mt-8 pb-4"
       >
-        <p className="hover:underline hover:cursor-pointer">SHOP</p>
-        <p className="hover:underline hover:cursor-pointer">SKILLS</p>
-        <p className="hover:underline hover:cursor-pointer">STORIES</p>
-        <p className="hover:underline hover:cursor-pointer">ABOUT</p>
-        <p className="hover:underline hover:cursor-pointer">CONTACT US</p>
+        <p>SHOP</p>
+        <p>SKILLS</p>
+        <p>STORIES</p>
+        <p>ABOUT</p>
+        <p>CONTACT US</p>
       </div>
     </nav>
   );

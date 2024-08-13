@@ -1,44 +1,38 @@
 import React from "react";
-
+import "./footer.css";
 function Footer() {
   return (
-    <footer className=" bg-black text-white p-2 sm:p-8">
-      <div
-        id="footer-upper"
-        className="  text-center sm:text-left  block sm:flex md:flex  lg:flex xl:flex 2xl:flex gap-4   py-6"
-      >
-        <div className=" w-full sm:w-3/5 lg:w-3/5 xl:w-3/5 2xl:w-3/5 ">
+    <footer id="footer">
+      <div id="footer-upper">
+        <div id="footer-upper-first">
           <p>BE THE FIRST TO KNOW</p>
           <br />
           <p>Sign up for updates from metta muse.</p>
           <br />
-          <div className="flex gap-3 p-2">
-          <input type="text" placeholder="Enter your e-mail..." className="py-1  text-center w-52"/>
-          <button className=" border-2 px-2 py-2 text-gray-400 border-gray-400">
-            SUBSCRIBE
-          </button>
-
+          <div>
+            <input type="text" placeholder="Enter your e-mail..." />
+            <button>SUBSCRIBE</button>
           </div>
         </div>
         <br />
-        <div className="w-full sm:w-2/5 lg:w-2/5 xl:w-2/5 2xl:w-2/5 ">
+        <div id="footer-upper-second">
           <div>
-            <p className="font-bold">CONTACT US</p>
+            <p style={{ fontWeight: "bold" }}>CONTACT US</p>
             <p>+44 221 133 5356</p>
             <p>customercare@mettamuse.com</p>
           </div>
           <br />
-          <div className="">
+          <div style={{ lineHeight: 2 }}>
             <p>CURRENCY</p>
-            <div className="flex justify-center">
+            <div style={{ display: "flex" }}>
               <img
-                className="h-6 rounded-full"
+                style={{ height: "1.5rem", borderRadius: "50%" }}
                 src="https://media.istockphoto.com/id/955320026/vector/united-states-flag-icon.jpg?s=612x612&w=0&k=20&c=H_7queZAVZk-Qp30pAbM-bfh64aO4bXBEC6ws_l6wNI="
                 alt="usa-flag"
               />
-              <p className="font-bold">&nbsp; ◆ USA</p>
+              <p style={{ fontWeight: "bold" }}>&nbsp; ◆ USA</p>
             </div>
-            <p className="text-xs">
+            <p style={{ fontSize: " 0.75rem", lineHeight: "1rem" }}>
               Transactions will be completed in Euros and a currency reference
               is available on hover
             </p>
@@ -46,9 +40,10 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <div id="bottom-footer-big-screen" className="block sm:block md:flex lg:flex xl:flex 2xl:flex mt-4 leading-7 gap-8 justify-evenly">
-        <ul className="hidden sm:hidden md:block  lg:block xl:block 2xl:block">
-          <li className="font-bold text-2xl mb-2">metta muse</li>
+
+      <div id="footer-bottom">
+        <ul>
+          <li>metta muse</li>
           <li>About Us</li>
           <li>Stories</li>
           <li>Astisans</li>
@@ -56,8 +51,8 @@ function Footer() {
           <li>Contact Us</li>
           <li>EU Compliances Docs</li>
         </ul>
-        <ul className="hidden sm:hidden md:block  lg:block xl:block 2xl:block">
-          <li className="font-bold text-2xl mb-2">Orders & Shipping</li>
+        <ul>
+          <li>Orders & Shipping</li>
           <li>Join/Login as a Seller</li>
           <li>Payment & Pricing</li>
           <li>Return & Refunds</li>
@@ -65,36 +60,38 @@ function Footer() {
           <li>Privacy Policy</li>
           <li>Terms & Conditions</li>
         </ul>
-        <div className="block text-black  sm:block md:hidden  lg:hidden xl:hidden 2xl:hidden text-center font-extrabold text-lg">
-        <select name="metta-select" id="metta-select" className="w-full text-center p-1 bg-black text-white " >
-        <option value="metta muse">metta muse</option>
-          <option value='About Us'>About Us</option>
-          <option value='Stories'>Stories</option>
-          <option value='Astisans'>Astisans</option>
-          <option value='Boutiques'>Boutiques</option>
-          <option value='Contact Us'>Contact Us</option>
-          <option value='EU Compliances Docs'>EU Compliances Docs</option> 
-        </select>
-        <br />
-        <br />
-        <hr />
-        <br />
-        <select name="" id="" className="w-full text-center p-1 bg-black text-white">
-            <option value="Join/Login as a Seller">Join/Login as a Seller</option>
+        <div id="footer-bottom-small-screen">
+          <select name="metta-select" id="metta-select">
+            <option value="metta muse">metta muse</option>
+            <option value="About Us">About Us</option>
+            <option value="Stories">Stories</option>
+            <option value="Astisans">Astisans</option>
+            <option value="Boutiques">Boutiques</option>
+            <option value="Contact Us">Contact Us</option>
+            <option value="EU Compliances Docs">EU Compliances Docs</option>
+          </select>
+          <br />
+          <br />
+          <hr />
+          <br />
+          <select name="" id="">
+            <option value="Join/Login as a Seller">
+              Join/Login as a Seller
+            </option>
             <option value="Payment & Pricing">Payment & Pricing</option>
             <option value="Return & Refunds">Return & Refunds</option>
             <option value="FAQs">FAQs</option>
             <option value="Privacy Policy">Privacy Policy</option>
             <option value="Terms & Conditions">Terms & Conditions</option>
-        </select>
-        <br />
-        <br />
-        <hr />
-        <br />
+          </select>
+          <br />
+          <br />
+          <hr />
+          <br />
         </div>
-        <div className="text-center">
+        <div id="footer-bottom-last">
           <p>FOLLOW US</p>
-          <div className="flex gap-2 justify-center">
+          <div>
             <a href="https://instagram.com/mettamuse">
               <svg
                 width="34"
@@ -158,9 +155,9 @@ function Footer() {
             </a>
           </div>
           <br />
-          <p >metta musse ACCEPTS</p>
+          <p>metta musse ACCEPTS</p>
           <svg
-          className="m-auto"
+            className="m-auto"
             width="300"
             height="35"
             viewBox="0 0 376 35"
@@ -297,7 +294,7 @@ function Footer() {
         </div>
       </div>
       <br />
-        <p className="text-white text-sm text-center sm:text-base md:text-lg">Copyright © 2023 mettamuse. All rights reserved.</p>
+      <p>Copyright © 2023 mettamuse. All rights reserved.</p>
     </footer>
   );
 }

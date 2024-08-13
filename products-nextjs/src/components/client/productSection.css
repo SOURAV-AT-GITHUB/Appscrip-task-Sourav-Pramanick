@@ -1,0 +1,111 @@
+#product-section {
+  padding: 0.25rem;
+}
+#product-section-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#product-section-top-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+}
+#product-section-top-left > p {
+  font-weight: bold;
+  display: none;
+}
+#product-section-top-left > button {
+  display: flex;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  margin: auto;
+}
+#product-section-top-left > button > svg {
+  display: none;
+}
+#product-section-top-left > button > span:nth-child(2) {
+  text-decoration: underline;
+  display: none;
+}
+#filter-text {
+  color: black;
+  text-align: center;
+  font-size: 1.05rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#product-section-top > select {
+  font-weight: bold;
+  background-color: white;
+  width: 11rem;
+  border-left: 2px solid gray;
+  padding-left: 1.5rem;
+}
+#product-section>div:nth-child(2){
+    width: 100%; 
+}
+@media screen and (min-width: 640px) {
+  /*sm*/
+  #product-section {
+    padding: 1rem;
+  }
+  #product-section-top-left > p {
+    display: block;
+  }
+  #product-section-top-left > button > svg {
+    display: block;
+  }
+  #product-section-top-left > button {
+    color: gray;
+  }
+  #filter-text {
+    display: none;
+  }
+  #product-section-top-left > button > span:nth-child(2) {
+    display: block;
+  }
+  #product-section-top-left {
+    margin: 0;
+  }
+  #product-section-top > select {
+    border-left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*md*/
+  #product-section {
+    padding: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /*lg*/
+  #product-section {
+    padding: 2rem;
+  }
+  #product-section>div:nth-child(2){
+display: flex;
+    
+}
+}
+@media screen and (min-width: 1280px) {
+  /*xl*/
+  #product-section {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  /*2xl*/
+  #product-section {
+    padding: 4rem;
+  }
+}

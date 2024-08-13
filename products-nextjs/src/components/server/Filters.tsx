@@ -1,22 +1,22 @@
 import React from "react";
-
+import './filter.css'
 interface FiltersProps {
   isVisible: boolean;
 }
 const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
   return (
-    <div className="p-1 w-full sm:w-full lg:w-1/6 xl:w-1/6 2xl:w-1/6">
+    <div id="filters-section" >
       <br />
       <input type="checkbox" /> &nbsp;
-      <label className="font-bold">CUSTOMIZBLE</label>
+      <label >CUSTOMIZBLE</label>
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         IDEAL FOR
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
@@ -25,11 +25,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         OCCASION
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Durga Puja">Durga Puja</option>
         <option value="Diwali">Diwali</option>
@@ -38,11 +38,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         WORK
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Formal">Formal</option>
         <option value="Casual">Casual</option>
@@ -51,11 +51,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         FABRIC
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Cotton">Cotton</option>
         <option value="Khadi">Khadi</option>
@@ -64,11 +64,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         SEGMENT
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Cotton">Cotton</option>
         <option value="Khadi">Khadi</option>
@@ -77,11 +77,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         SUITABLE FOR
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Adults">Adults</option>
         <option value="Kids">Kids</option>
@@ -90,11 +90,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         RAW MATERIALS
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Cotton">Cotton</option>
         <option value="Khadi">Khadi</option>
@@ -103,11 +103,11 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <br />
       <br />
       <hr />
-      <label htmlFor="" className="font-bold">
+      <label >
         PATTERN
       </label>
       <br />
-      <select className="w-full">
+      <select >
         <option value="All">All</option>
         <option value="Printed">Printed</option>
         <option value="Check">Check</option>

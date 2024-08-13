@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Filters from "../server/Filters";
 import Products from "../server/Products";
+import './productSection.css'
 
 function ProductSection() {
   const [showFilter, setShowFilter] = useState<boolean>(true);
@@ -17,21 +18,20 @@ function ProductSection() {
   };
 
   return (
-    <div className="  p-1 sm:p-4 lg:p-8 xl:p-12 2xl:p-16">
-      <div className="w-full border-y-2 py-4  flex justify-between items-center">
-        <div className="flex items-center gap-4">
-          <p className="font-bold hidden sm:block lg:block xl:block 2xl:block ">
+    <section id="product-section">
+      <div id="product-section-top"  >
+        <div id="product-section-top-left"  >
+          <p>
             {productCount} ITEMS
           </p>
 
           <button
             onClick={handleToggleFilter}
-            className="w-fit p-1 flex items-center  text-gray-500 font-serif"
+
           >
             {showFilter ? (
               <>
                 <svg
-                  className="hidden sm:block lg:block xl:block"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -47,12 +47,11 @@ function ProductSection() {
                   />
                 </svg>{" "}
                 &nbsp; &nbsp;
-                <span className="font-extrabold text-black sm:font-normal sm:text-gray-500  sm:underline    before:content-['FILTER'] sm:before:content-['HIDE\_FILTERS']"></span>{" "}
+                <span>HIDE FILTERS</span>{" "}
               </>
             ) : (
               <>
                 <svg
-                  className="hidden sm:block lg:block xl:block"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
@@ -68,16 +67,14 @@ function ProductSection() {
                   />
                 </svg>
                 &nbsp; &nbsp;
-                <span className="font-extrabold text-black sm:font-normal sm:text-gray-500  sm:underline    before:content-['FILTER'] sm:before:content-['SHOW\_FILTERS']"></span>{" "}
+                <span >SHOW FILTERS</span>{" "}
               </>
             )}
+            <span id="filter-text">FILTER</span>
           </button>
         </div>
 
         <select
-          name=""
-          id=""
-          className="font-bold h-fit p-1 bg-white w-44 border-l-2 border-gray-500 sm:border-0 pl-6"
         >
           <option value="RECOMENDED">RECOMENDED</option>
           <option value="POPULARITY">POPULARITY</option>
@@ -86,11 +83,11 @@ function ProductSection() {
           <option value="PRICE : HIGH TO LOW">PRICE : HIGH TO LOW</option>
         </select>
       </div>
-      <div className="w-full block sm:block lg:flex xl:flex 2xl:flex">
+      <div >
         {showFilter && <Filters isVisible={showFilter} />}
         <Products isVisible={showFilter} updateCount={updateCount} />
       </div>
-    </div>
+    </section>
   );
 }
 
