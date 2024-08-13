@@ -22,6 +22,8 @@
   display: none;
 }
 #product-section-top-left > button {
+  background: transparent;
+  border: none;
   display: flex;
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -44,6 +46,10 @@
   letter-spacing: 1px;
 }
 #product-section-top > select {
+  text-align: center;
+  font-size: 1.05rem;
+  background: transparent;
+  border: none;
   font-weight: bold;
   background-color: white;
   width: 11rem;

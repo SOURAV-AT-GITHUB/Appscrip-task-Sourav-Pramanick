@@ -8,7 +8,6 @@
   width: 100%;
 }
 .products-container-with-filters {
-  /**/
   margin-top: 1rem;
   padding: 0;
   width: 100%;
@@ -46,22 +45,22 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: bold;
-  font-size: 0.75rem; /* 12px */
-  line-height: 1rem;
+  font-size: 0.85rem; /* 12px */
+  line-height: 0.85rem;
 }
 .card-text > p {
   font-size: 10px;
-  /* width: fit-content;
-  text-wrap: wrap; */
+  color: gray;
 }
-.card-text > p>a{
-    text-decoration: underline;
+.card-text > p > a {
+  text-decoration: underline;
+  color: gray;
 }
-.card-details>div:nth-child(2){
-    width: 20%;
-    height: 100%;
-    text-align: center;
-    align-self: center;
+.card-details > div:nth-child(2) {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  align-self: center;
 }
 @media screen and (min-width: 450px) {
   .cards > img {
@@ -109,7 +108,6 @@
   }
   .card-text > h3 {
     font-size: 1.125rem; /* 18px */
-    line-height: 1.75rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -141,5 +139,5 @@
 .filled-heart {
   height: 20px;
   width: 22px;
-  margin-left: 4.5px;
+  margin-bottom: 1px;
 }

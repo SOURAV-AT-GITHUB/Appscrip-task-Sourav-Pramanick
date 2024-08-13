@@ -24,9 +24,9 @@ function Footer() {
           <br />
           <div style={{ lineHeight: 2 }}>
             <p>CURRENCY</p>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex",alignItems:"center" }}>
               <img
-                style={{ height: "1.5rem", borderRadius: "50%" }}
+                style={{ height: "1.5rem", borderRadius: "50%"}}
                 src="https://media.istockphoto.com/id/955320026/vector/united-states-flag-icon.jpg?s=612x612&w=0&k=20&c=H_7queZAVZk-Qp30pAbM-bfh64aO4bXBEC6ws_l6wNI="
                 alt="usa-flag"
               />

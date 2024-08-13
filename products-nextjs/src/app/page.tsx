@@ -9,7 +9,6 @@ export default  function Home() {
     <main id="main-container" >
       <section id="main-top"  >
         <h3 >DISCOVER OUR PRODUCTS</h3>
-        <br />
         <p >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
           necessitatibus cumque, libero quibusdam sapiente tenetur accusamus

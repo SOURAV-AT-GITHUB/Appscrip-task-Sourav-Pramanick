@@ -10,7 +10,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
       <input type="checkbox" /> &nbsp;
       <label >CUSTOMIZBLE</label>
       <br />
-      <br />
       <hr />
       <label >
         IDEAL FOR
@@ -22,8 +21,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Female">Female</option>
         <option value="Kids">Kids</option>
       </select>
-      <br />
-      <br />
       <hr />
       <label >
         OCCASION
@@ -35,7 +32,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Diwali">Diwali</option>
         <option value="New Year">New Year</option>
       </select>
-      <br />
       <br />
       <hr />
       <label >
@@ -49,7 +45,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Partyware">Partyware</option>
       </select>
       <br />
-      <br />
       <hr />
       <label >
         FABRIC
@@ -61,7 +56,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Khadi">Khadi</option>
         <option value="Silk">Silk</option>
       </select>
-      <br />
       <br />
       <hr />
       <label >
@@ -75,7 +69,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Silk">Silk</option>
       </select>
       <br />
-      <br />
       <hr />
       <label >
         SUITABLE FOR
@@ -88,7 +81,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Infants">Infants</option>
       </select>
       <br />
-      <br />
       <hr />
       <label >
         RAW MATERIALS
@@ -100,7 +92,6 @@ const Filters: React.FC<FiltersProps> = ({ isVisible }) => {
         <option value="Khadi">Khadi</option>
         <option value="Silk">Silk</option>
       </select>
-      <br />
       <br />
       <hr />
       <label >

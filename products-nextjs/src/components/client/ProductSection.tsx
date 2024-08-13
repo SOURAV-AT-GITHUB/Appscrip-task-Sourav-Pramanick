@@ -77,10 +77,10 @@ function ProductSection() {
         <select
         >
           <option value="RECOMENDED">RECOMENDED</option>
-          <option value="POPULARITY">POPULARITY</option>
-          <option value="NEW ARRIVALS">NEW ARRIVALS</option>
-          <option value="PRICE : LOW TO HIGH">PRICE : LOW TO HIGH</option>
+          <option value="NEWEST FIRST">NEWEST FIRST</option>
+          <option value="POPULAR">POPULAR</option>
           <option value="PRICE : HIGH TO LOW">PRICE : HIGH TO LOW</option>
+          <option value="PRICE : LOW TO HIGH">PRICE : LOW TO HIGH</option>
         </select>
       </div>
       <div >
